@@ -1,0 +1,177 @@
+p {
+    margin: 20px 0;
+}
+
+body {
+    /*font-family: Lato,"Noto Sans SC",-apple-system,sans-serif;*/
+    color: #444;
+    /*letter-spacing: 1px;*/
+}
+
+/*
+ * 首页文章简介斜体
+ */
+.post-content-preview {
+    font-style: normal;
+    color: 666666 !important;
+}
+
+/*
+ * 首页文章标题大小
+ */
+.post-preview>a>.post-title {
+    font-size: 22px;
+}
+
+/* footer */
+footer {
+    padding: 20px;
+}
+
+/*
+ * ← Newer Posts Older Posts →
+ */
+.pager li>a:hover, .pager li>a:focus {
+    color: #0085a1;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+/* powered by 豆豆 */
+.my-footer {
+    height: 80px;
+    width: 100%;
+    margin-bottom: -25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    border-top: 1px solid rgba(30,35,42,.06);
+    box-shadow: 0 4px 10px 10px rgb(0 0 0 / 5%);
+    transition: background .6s ease-in-out,padding .6s ease-in-out;
+}
+
+/* 向上 */
+#rocket {
+    right: 50px;
+    bottom: 20px;
+    background: url(images/rocket.png) no-repeat 50% 0;
+}
+
+/* 公众号 */
+.post_qrcode_256 {
+    border-top: 1px dashed #1976d2;
+    margin-top: 20px;
+}
+
+/* 上一篇下一篇 */
+.container .nav {
+    border-top: 1px dashed #1976d2;
+    border-bottom: 1px dashed #1976d2;
+    margin-bottom: 15px;
+}
+
+/* a */
+a:hover {
+    color: #dd2c00 !important;
+    text-decoration: none;
+}
+
+/* bar 豆豆的杂货铺 HOME... */
+a.navbar-brand:hover,.navbar-right li>a:hover{
+ color: white !important; 
+}
+
+/* 从底部向上返回时的 bar 豆豆的杂货铺 HOME... */
+.navbar-custom.is-fixed a.navbar-brand:hover,.navbar-custom.is-fixed .navbar-right li>a:hover{
+  color: #404040 !important;  
+}
+
+/* 引用 */
+blockquote {
+    font-style: normal;
+    margin: 1em 0;
+    padding: 5px 10px;
+    color: #333;
+    border-left: 4px solid #dd2c00;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+blockquote > p{
+  line-height: 35px;
+  margin: 0px;
+}
+
+/* 详情页的 tags */
+.tags a, .tags .tag {
+    border: 1px solid rgba(255,255,255,.8);
+    border-radius: 0em;
+    color: #1976d2;
+}
+
+/* 主页的文章简介 */
+.post-content-preview:hover {
+    color: #555 !important;
+}
+
+.post-content-preview {
+    font-size: 14px;
+    color: #555
+}
+
+/* 详情页标题剧中 */
+.post-heading {
+    text-align: center;
+}
+
+/* 顶部菜单 */
+.navbar-custom.is-fixed {
+    position: fixed;
+    top: -65px;
+    /*background-color: #fff !important;*/
+    border-bottom: 1px solid #f2f2f2;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;    
+    border-top: 1px solid rgba(30,35,42,.06);
+    transition: background .6s ease-in-out,padding .6s ease-in-out;
+}
+
+/* 归档页 */
+.one-tag-list ul>li {
+    padding: 5px 0px;
+}
+
+.listing-seperator, .one-tag-list a {
+    color: #1976d2 !important;
+}
+
+.one-tag-list .tag-text {
+    font-weight: 400;
+}
+
+/* 详情页 列表 */
+.post-container ul, .post-container ol {
+    margin-bottom: 0px;
+}
+
+.post-container ul li, .post-container ol li{
+    margin: 10px auto;
+}
+
+/* 文章详情页标题前的符号 */
+[data-anchorjs-icon]::after {
+    content: none;
+}
+
+/* 选中样式 */
+::selection {
+    background: #fe7300;
+    color: rgba(255,255,255,0.8);
+}
+
+
+
+
+
+
+

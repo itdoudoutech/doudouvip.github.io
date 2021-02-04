@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/logo-256.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          豆豆的杂货铺 | Blog
+        
+    </title>
+
+    <link rel="canonical" href="http://coderlmm.github.io/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <link rel="stylesheet" href="/css/donate.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <link rel="stylesheet" href="/css/customize.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/img/header_img/home.jpg') 
+            /*config*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                
+                    <div class="site-heading">
+                        <h1>豆豆的杂货铺</h1>
+                        <!--<hr class="small">-->
+                        <span class="subheading">勿在浮沙筑高台</span>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">豆豆的杂货铺</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+<div class="container">
+    <div class="row">
+        
+<!-- NO SIDEBAR -->
+    <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+                <!-- Main Content -->
+
+
+<div class="post-preview">
+
+    <a href="/article/network-08/">
+        <h2 class="post-title">
+                                 
+            计算机网络自顶向下方法读书笔记（第八章）
+        </h2>
+        <!--
+        <h3 class="post-subtitle">
+            
+        </h3>
+        -->
+    </a>
+    <div class="post-content-preview">
+        前面几章对计算机网络中的各个层做了详细的介绍，本章主要讲的是另外一个大的话题，网络安全。
+网络安全具体就是指如何在网络上进行安全的通信，若要达到该目标，则必须具备以下特性：
+
+机密性：近发送方和接收方能够理解传输的报文，加密。
+报文完整性：确保报文在传输过程中不被篡改。
+端点鉴别：发送方和接收方必须能确认对方的身份。
+运行安全性：确保整个局域网的运行安全。
+
+密码学
+发送方将明文通过加密算法......
+    </div>
+    
+         
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/network-05-02/">
+        <h2 class="post-title">
+                                 
+            计算机网络自顶向下方法读书笔记（第五章之二）
+        </h2>
+        <!--
+        <h3 class="post-subtitle">
+            
+        </h3>
+        -->
+    </a>
+    <div class="post-content-preview">
+        这周看的主要是关于链路层的知识，链路层处于网络层之下，物理层之上。
+链路层寻址和 ARP
+网络接口都有链路层地址（MAC 地址），所以路由器和交换机以及网卡都有自己特有的 MAC 地址，该地址不因主机的物理位置变化而变化。并且这个地址是全球唯一的，没有重复的。
+目前已经学到的地址包括：应用层的主机名，网络层的 IP 地址以及链路层的 MAC 地址。
+链路层做的事是将网络层提供的数据包封装进自......
+    </div>
+    
+         
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/network-05-01/">
+        <h2 class="post-title">
+                                 
+            计算机网络自顶向下方法读书笔记（第五章之一）
+        </h2>
+        <!--
+        <h3 class="post-subtitle">
+            
+        </h3>
+        -->
+    </a>
+    <div class="post-content-preview">
+        这周看的主要是关于链路层的知识，链路层处于网络层之下，物理层之上。
+链路层提供的可能的服务包括：
+
+成帧
+链路接入
+可靠交付
+差错检测和纠正
+
+其中关于差错检测和纠正技术主要有：
+
+奇偶校验
+检验和方法
+循环冗余检测
+
+多路访问链接和协议
+链路层有两种网络链路，点对点链路和广播链路。
+其中点对点链路由链路一端的单个发送方和链路另一端的单个接收方组成，而广播链路可以让多个发送方和接收方都连接到......
+    </div>
+    
+         
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/network-04/">
+        <h2 class="post-title">
+                                 
+            计算机网络自顶向下方法读书笔记（第四章）
+        </h2>
+        <!--
+        <h3 class="post-subtitle">
+            
+        </h3>
+        -->
+    </a>
+    <div class="post-content-preview">
+        这周看的主要是关于网络层的知识。
+运输层提供应用程序间的数据传输，是进程到进程的。而网络层提供的数据传输功能是主机到主机间的。网络层要想提供数据传输，必须具备两个重要的功能，转发和路有选择算法。
+
+转发：就是路由器拥有将数据从一个输入端口转移到输出端口的功能。
+路由选择算法：简单来说就是路由器要知道从哪个输出端口将数据输出，背后实现的逻辑是转发表。
+
+网络服务模型
+要求
+
+确保交付：服务确保......
+    </div>
+    
+         
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/network-03-02/">
+        <h2 class="post-title">
+                                 
+            计算机网络自顶向下方法读书笔记（第三章之二）
+        </h2>
+        <!--
+        <h3 class="post-subtitle">
+            
+        </h3>
+        -->
+    </a>
+    <div class="post-content-preview">
+        这周看的主要是关于 TCP 的可靠传输，拥塞控制以及流量控制。
+
+TCP 报文说明
+
+Sequence number: 简写为 sep。序号，报文段是以字节来打包的，序号是报文段中第一个字节序号。解决了网络包乱序问题。
+Acknowledgment number: 简写为 ack。确认号。期待接受方下一次发送的序号 = [上次发送的序号 + 报文长度]。解决了丢包问题。若确认号 = N，则表......
+    </div>
+    
+         
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/network-03-01/">
+        <h2 class="post-title">
+                                 
+            计算机网络自顶向下方法读书笔记（第三章之一）
+        </h2>
+        <!--
+        <h3 class="post-subtitle">
+            
+        </h3>
+        -->
+    </a>
+    <div class="post-content-preview">
+        本章节开始讲运输层。
+运输层位于应用层和网络层中间，负责将应用程序的数据发送至网络层和从网络层接收数据转交给相应的应用程序。
+网络层提供了主机间的逻辑通信，而运输层则为运行在不同主机之上的进程之间提供逻辑通信。
+运输层运行的协议主要是 TCP 和 UDP。
+UDP
+UDP 是无连接的（发送数据之前双方运输层没有进行握手）不可靠传输的协议。
+UDP 只是做了运输协议能够做的最少量的工作，除了多......
+    </div>
+    
+         
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/network-02-02/">
+        <h2 class="post-title">
+                                 
+            计算机网络自顶向下方法读书笔记（第二章之二）
+        </h2>
+        <!--
+        <h3 class="post-subtitle">
+            
+        </h3>
+        -->
+    </a>
+    <div class="post-content-preview">
+        IP 地址用于标识主机的唯一地址，但 IP 地址对人类是不友好的，难于记忆的，所以就出现了域名。因此需要一个系统可以将 IP 地址和域名进行转换，这就是域名系统（DNS）。
+DNS 协议属于应用层协议，运行在 UDP 之上，使用 53 号端口。
+除了域名和 IP 地址这间的转换服务外，DNS 还提供一下服务：
+
+主机别名
+邮件服务器别名
+负载分配
+
+单一 DNS 服务器上运行集中式数据库完全......
+    </div>
+    
+         
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/network-02-01/">
+        <h2 class="post-title">
+                                 
+            计算机网络自顶向下方法读书笔记（第二章之一）
+        </h2>
+        <!--
+        <h3 class="post-subtitle">
+            
+        </h3>
+        -->
+    </a>
+    <div class="post-content-preview">
+        客户–服务器体系结构，有一个总是打开的主机成为服务器。具有固定的，周知的 IP 地址。
+进程通信
+不同主机间的进程通信。
+网络进程通信，很明显至少是两个进程，他们通过网络互相发送报文。若想通过网络发送报文，报文则必须经过发送方的应用层 -&gt; 运输层 -&gt; 网络层 -&gt; 链路层 -&gt; 物理层，再到接收方物理层 -&gt; 链路层 -&gt; 网络层 -&gt; 运输层 ......
+    </div>
+    
+         
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/network-01/">
+        <h2 class="post-title">
+                                 
+            计算机网络自顶向下方法读书笔记（第一章）
+        </h2>
+        <!--
+        <h3 class="post-subtitle">
+            
+        </h3>
+        -->
+    </a>
+    <div class="post-content-preview">
+        2019.05.13 号周一开始了第三期的读书活动「计算机网络自顶向下方法」，由于自己拖延加上后来流感感染高烧感冒导致现在才开始动笔写作业，甚是惭愧。
+本章简单，多是概念性的知识。
+网络中的是设备通过通信链路和分组交换机链接到一起，其中各个设备要想完成信息交换，也就是数据的传输，必须有一个统一的协议才行。就好比人们平时沟通交流所用的语言一样，语言不通，沟通的可能性基本为零。
+因特网中设计的协......
+    </div>
+    
+         
+    
+
+</div>
+<hr>
+
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+</ul>
+
+
+            </div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+
+                <!-- Friends Blog -->
+                
+            </div>
+        
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="my-footer">
+    <span class="copyright text-muted">
+        &copy; Powered By 豆豆 2017-2021 
+    </span>
+</div>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://coderlmm.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'xxx';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://coderlmm.github.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
