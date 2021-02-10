@@ -25,9 +25,9 @@ SEOTitle: 豆豆的杂货铺 | Blog
 email: e-mail_address
 description: ""
 keyword: ""
-header-img: https://cdn.jsdelivr.net/gh/coderlmm/coderlmm.github.io@sources/source/img/header_img/bg.png
-article-img: https://cdn.jsdelivr.net/gh/coderlmm/coderlmm.github.io@sources/source/img/header_img/bg.png
-404-img: https://cdn.jsdelivr.net/gh/coderlmm/coderlmm.github.io@sources/source/img/header_img/bg.png
+header-img: https://cdn.jsdelivr.net/gh/coderlmm/coderlmm.github.io@sources/source/img/header_img/bg.jpg
+article-img: https://cdn.jsdelivr.net/gh/coderlmm/coderlmm.github.io@sources/source/img/header_img/bg.jpg
+404-img: https://cdn.jsdelivr.net/gh/coderlmm/coderlmm.github.io@sources/source/img/header_img/bg.jpg
 signature: false #show signature
 signature-img:
 
