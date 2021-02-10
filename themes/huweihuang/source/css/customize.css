@@ -163,6 +163,9 @@ blockquote > p{
     content: none;
 }
 
+/* 文章详情页背景图 */
+
+
 /* 选中样式 */
 ::selection {
     background: #fe7300;
