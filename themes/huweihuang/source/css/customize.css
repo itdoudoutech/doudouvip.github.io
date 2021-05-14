@@ -158,6 +158,18 @@ blockquote > p{
     margin: 10px auto;
 }
 
+/* tags 页 */
+#tag_cloud a {
+    color: gray !important;
+    border-color: gray !important;
+    background-color: #D6D6D6 !important;
+}
+
+#tag_cloud a:hover, #tag_cloud .tag:hover, #tag_cloud a:active, #tag_cloud .tag:active {
+    color: #dd2c00 !important;
+    background-color: #D6D6D6 !important;
+}
+
 /* 文章详情页标题前的符号 */
 [data-anchorjs-icon]::after {
     content: none;
